@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "light";
+  src: url(/fonts/Rubik-Light.ttf);
+}
+@font-face {
+  font-family: "regular";
+  src: url(/fonts/Rubik-Regular.ttf);
+}
+@layer components {
+  .d {
+    @apply border-2 border-red-800;
+  }
+  .text-oneline {
+    @apply whitespace-nowrap overflow-ellipsis overflow-hidden;
+  }
+}
+
+@layer base {
+  a {
+    @apply font-regular;
+  }
+  h3 {
+    @apply font-regular text-para lg:text-subtitle;
+  }
+  h2 {
+    @apply font-regular text-title;
+  }
+  span {
+    @apply font-regular;
+  }
+}
